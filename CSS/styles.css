@@ -1,0 +1,360 @@
+
+/*===================
+This is mobile first website
+======================*/
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
+
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #ecf0f3;
+    font-family: 'libre baskerville';
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+    padding: 0;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.container-fluid{
+    padding: 3% 5% 2%;
+     
+}
+
+
+/*===================
+Navigation
+======================*/
+
+my-nav{
+     
+     position: absolute;
+     z-index: 10;
+    
+}
+
+.navbar{
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    background-color: transparent;
+   
+}
+.navbar-brand{
+    font-size: 2rem;
+    font-weight: 700;
+    color:#c57642;
+}
+.main-menu ul{
+    display: inline-flex;
+    list-style: none;
+    color:white; 
+   
+}
+
+.main-menu ul li a{ 
+   
+    margin:10px;
+    padding: 5px;
+    color:#c57642;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.main-menu ul li a:hover{
+    color:#d17841;
+}
+
+/*The social menu*/
+
+
+
+.active, .main-menu ul li :hover {
+    background: #ddddd7;
+    border-radius: 2px;
+}
+
+
+.sub-main-menu-1 {
+    display: none;
+}
+
+.main-menu ul li:hover .sub-main-menu-1 {
+    display: block;
+    position: absolute;
+    background-color: #ddddd7;
+    margin-top: 20px;
+    margin-left: -20px;
+    z-index: 99999;
+}
+
+.main-menu ul li:hover .sub-main-menu-1 ul {
+    display: block;
+    margin: 15px;
+}
+
+.main-menu ul li:hover .sub-main-menu-1 ul li {
+    width: 150px;
+    padding: 20px;
+    border-bottom: 2px dotted white;
+    background: transparent;
+    border-radius: 0;
+    text-align: center;
+    
+
+}
+
+.main-menu ul li:hover .sub-main-menu-1 ul li :last-child {
+    border-bottom: none;
+
+}
+
+
+/*===================
+Nav Toggler
+======================*/
+
+
+
+.mobilemenu.navbar-toggler { 
+    border-color: #2bab0d;
+}
+
+span.navbar-toggler-icon{
+    color: #c57642;
+    font-size: 2rem;
+    padding-top: .5rem;
+}
+
+.navbar-collapse {
+    background: #333;
+ }
+
+
+/*Hero Section*/
+
+
+/********************************/
+/*       Fade Bs-carousel       */
+/********************************/
+.fade-carousel {
+    position: relative;
+    height: 100vh;
+}
+
+
+.fade-carousel .carousel-inner .carousel-item {
+    height: 100vh;
+}
+.fade-carousel .carousel-indicators > li {
+    margin: 0 2px;
+    background-color: #c57642;
+    border-color: #c57642;
+    opacity: .7;
+}
+.fade-carousel .carousel-indicators > li.active {
+  width: 10px;
+  height: 10px;
+  opacity: 1;
+}
+
+/********************************/
+/*         Carousels       */
+/********************************/
+
+/* Home page hero carousel*/
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 3;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0 rgba(0,0,0,.75);
+      -webkit-transform: translate3d(-50%,-50%,0);
+         -moz-transform: translate3d(-50%,-50%,0);
+          -ms-transform: translate3d(-50%,-50%,0);
+           -o-transform: translate3d(-50%,-50%,0);
+              transform: translate3d(-50%,-50%,0);
+}
+
+
+.hero-text h1 {
+    font-size: 3rem;    
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+
+.hero-text h3{
+    font-size: 1rem;
+    padding-top: 20px;
+    text-transform: capitalize;
+    color: #eee;
+}
+
+.fade-carousel .carousel-inner .carousel-item.active .hero-text {
+    opacity: 0;
+    -webkit-transition: 2s all ease-in-out .1s;
+       -moz-transition: 2s all ease-in-out .1s; 
+        -ms-transition: 2s all ease-in-out .1s; 
+         -o-transition: 2s all ease-in-out .1s; 
+            transition: 2s all ease-in-out .1s; 
+}
+.fade-carousel .carousel-inner .carousel-item.active .hero-text {
+    opacity: 1;
+    -webkit-transition: 2s all ease-in-out .1s;
+       -moz-transition: 2s all ease-in-out .1s; 
+        -ms-transition: 2s all ease-in-out .1s; 
+         -o-transition: 2s all ease-in-out .1s; 
+            transition: 2s all ease-in-out .1s;    
+}
+
+
+/*Home page hero overlay*/
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: #39241b;
+    opacity: .2;
+}
+
+
+/********************************/
+/*       Slides backgrounds     */
+/********************************/
+
+/*Homepage slides bg*/
+.fade-carousel .slides .slide-1, 
+.fade-carousel .slides .slide-2,
+.fade-carousel .slides .slide-3,
+video.fullscreen {
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+  
+
+.fade-carousel .slides .slide-1 {
+  background-image: url(../assets/Veggies/slides-1.jpg);
+}
+.fade-carousel .slides .slide-2 {
+ background-image: url(../assets/Veggies/slide-2.jpg);
+}
+.fade-carousel .slides .slide-3 {
+ background-image: url(../assets/Veggies/slide-3.jpg);
+}
+
+
+  
+
+
+/*====================
+Mansory Gallery
+=====================*/
+
+  
+.second-mansory{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #ecf0f3;
+    padding-top: 40px;
+}
+  
+.card img{
+    width: 100%;
+    transition: .3s;
+    border-radius: 8px;
+
+}
+
+.card .mansory-card{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card .mansory-card-2{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+.card .mansory-card-3{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.card{
+    border-radius: 12px;
+    padding: 3%;
+    margin-bottom: 6%;
+    background: #fff;
+    box-shadow: 10px 10px 24px -12px rgba(0,0,0,.75);
+    transition: .3s;
+
+}
+
+.card:hover{
+    box-shadow: inset 10px 10px 24px -12px rgba(0,0,0,.75);
+
+}
+  
+  
+.card:hover img{
+    transform: scale(0.8);
+}
+  
+
+.masonry-column {
+  padding: 0 1px;
+}
+
+.masonry-grid > div .thumbnail {
+  margin: 5px 1px;
+}
+
+
+
+/*====================
+Media Queries
+=====================*/
+
+
+ @media screen and (min-width:1024px) and (max-width:1440px){
+    
+    .navbar-collapse {
+       background: none;
+     }
+
+     
+.hero-text h1 {
+    font-size: 6rem;    
+    
+}
+
+
+.hero-text h3{
+    font-size: 1.5rem;
+   
+}
+
+     }
+
+
+     
