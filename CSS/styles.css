@@ -52,6 +52,13 @@ my-nav{
     font-weight: 700;
     color:#c57642;
 }
+
+
+.navbar-brand:hover{
+   
+    color:#c57642;
+}
+
 .main-menu ul{
     display: inline-flex;
     list-style: none;
@@ -67,6 +74,11 @@ my-nav{
     font-weight: 600;
     text-decoration: none;
     font-size: 14px;
+}
+
+
+.main-menu ul li a:active{
+    color:#130f0d;
 }
 
 .main-menu ul li a:hover{
