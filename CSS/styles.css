@@ -402,5 +402,21 @@ Media Queries
 
      }
 
+     
+@media screen and (min-width:375px) and (max-width:768px){
+    iframe{
+        display: none;
+    }
+
+ 
+    
+section .container-fluid{
+    
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+}
+
 
      
