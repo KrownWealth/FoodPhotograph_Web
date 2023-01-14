@@ -342,6 +342,40 @@ Mansory Gallery
 }
 
 
+/*====================
+Contact
+=====================*/
+
+section .container-fluid{
+    background-color: #fff;
+    padding-left: 50px;
+    padding-right: 60px;
+    padding-top: 40px;
+}
+
+.content{
+    font: normal 15px / 27px "PT Sans", Helvetica, Arial, Verdana, sans-serif;
+    word-spacing: normal;
+    color: #85868c;
+
+}
+
+.content-title{
+    padding-bottom: 20px;
+    color: #cc804d;
+}
+
+form input{
+    margin-bottom: 15px;
+}
+
+.btn{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    background-color: #cc804d;
+    color: #fff;
+}
+
 
 /*====================
 Media Queries
